@@ -71,15 +71,13 @@ export default function Dashboard({ data, cvText, onReset }: DashboardProps) {
         </section>
 
         {/* Timeline */}
-        <div className="grid grid-cols-1 xl:grid-cols-[1.5fr_1fr] gap-16 mb-20">
-          <section>
-            <div className="flex items-center justify-between mb-8">
-              <h2 className="col-header">Career Path</h2>
-              <span className="text-xs font-mono opacity-40">03 — TIMELINE</span>
-            </div>
+        <section className="mb-20">
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="col-header">Career Path</h2>
+            <span className="text-xs font-mono opacity-40">03 — TIMELINE</span>
+          </div>
             <Timeline events={data.timeline} />
-          </section>
-        </div>
+        </section>
 
         {/* Publications */}
         <section className="mb-20">
@@ -121,6 +119,15 @@ export default function Dashboard({ data, cvText, onReset }: DashboardProps) {
             ))}
           </div>
         </section>
+
+        {/* Footer */}
+        <footer className="mt-20 pt-12 border-t border-line flex flex-col md:flex-row items-center justify-center gap-8 opacity-40 pb-12">
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-mono uppercase tracking-widest">
+              Created by <a href="https://yongjin-l.github.io/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors underline underline-offset-4 decoration-accent/30">Yongjin Lee</a>
+            </span>
+          </div>
+        </footer>
       </main>
     </div>
   );

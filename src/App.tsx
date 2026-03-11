@@ -83,6 +83,11 @@ export default function App() {
                   <Sparkles className="w-4 h-4" />
                   <span className="text-xs font-mono uppercase tracking-widest">Interactive Visualization</span>
                 </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-mono uppercase tracking-widest">
+                    Created by <a href="https://yongjin-l.github.io/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors underline underline-offset-4 decoration-accent/30">Yongjin Lee</a>
+                  </span>
+                </div>
               </footer>
             </div>
           </motion.div>
