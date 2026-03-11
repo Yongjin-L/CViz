@@ -1,0 +1,5 @@
+{
+  "name": "CViz",
+  "description": "Transform static research CVs into interactive, AI-powered narratives with theme extraction and visualization.",
+  "requestFramePermissions": []
+}
